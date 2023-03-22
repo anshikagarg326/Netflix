@@ -1,0 +1,28 @@
+.title {
+  color: white;
+  margin-left: 25px;
+}
+
+.row_images {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-left: 25px;
+}
+.row_images::-webkit-scrollbar {
+  /*webkit is used so that this is hidden for all the browsers ,but its functionality is retained*/
+  display: none;
+}
+.row_image {
+  max-height: 150px;
+  width: 100%;
+  margin-right: 10px;
+  object-fit: contain;
+  transition: transform 450ms;
+}
+.row_image:hover {
+  transform: scale(1.08);
+}
+.row_imageLarger {
+  max-height: 250px;
+}
